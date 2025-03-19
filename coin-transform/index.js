@@ -6,6 +6,8 @@ const input = document.querySelector('#amount');
 const coins = document.querySelector('#currency')
 const form = document.querySelector('form');
 const footer = document.querySelector('main footer');
+const description = document.querySelector('#description');
+const result = document.querySelector('#result');
 
 // manipulando o input do id "amount" para receber somente números
 input.addEventListener('input', (ev) => {
@@ -36,11 +38,14 @@ form.addEventListener('submit', (ev) => {
 function convertCurrency(amount, price, symbol) {
     try {
         // aplica a classe que exibe o footer para mostrar o resultado
+        description.innerHTML = `${symbol} 1 = R$ ${price}`
+        const count = amount * price
+        result.innerHTML = `R$ ${count.toFixed(2)}`
         footer.classList.add('show-result')
     } catch (err) {
         // remove a classe do footer para esconder o resultado
         footer.classList.remove('show-result')
-        alert('Erro ao converter a moeda. Tente novamente.')
-    }
+        alert('Ocorreu um erro ao converter a moeda')
    
+    }
 }
