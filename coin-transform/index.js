@@ -38,7 +38,7 @@ form.addEventListener('submit', (ev) => {
 function convertCurrency(amount, price, symbol) {
     try {
         // aplica a classe que exibe o footer para mostrar o resultado
-        description.innerHTML = `${symbol} 1 = R$ ${price}`
+        description.innerHTML = `${symbol} 1 =  ${formatCurrency(price)}`
         const count = amount * price
         result.innerHTML = `R$ ${count.toFixed(2)}`
         footer.classList.add('show-result')
@@ -50,5 +50,5 @@ function convertCurrency(amount, price, symbol) {
     }
 
 } function formatCurrency(value) {
-    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+    return Number(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 }
