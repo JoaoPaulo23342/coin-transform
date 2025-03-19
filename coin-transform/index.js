@@ -48,4 +48,7 @@ function convertCurrency(amount, price, symbol) {
         alert('Ocorreu um erro ao converter a moeda')
    
     }
+
+} function formatCurrency(value) {
+    return value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 }
