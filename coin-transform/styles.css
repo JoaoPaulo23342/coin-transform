@@ -35,19 +35,19 @@ body {
 
   gap: 3.12rem;
 
-  color: #f1f2f6;
+  color: #2ebcbc;
 }
 
 main {
   width: 480px;
   border-radius: 1.5rem;
 
-  border: 1px solid #2f3279;
+  border: 1px solid #2ebcbc;
   overflow-y: hidden;
 }
 
 form {
-  background-color: #141534;
+  background-color: #34378c;
 
   display: flex;
   flex-direction: column;
@@ -68,7 +68,7 @@ select {
   outline: 0;
 
   color: #f1f2f6;
-  border: 1px solid #1f2151;
+  border: 1px solid #2ebcbc;
   border-radius: 0.5rem;
 
   background-color: #0e0f25;
@@ -85,7 +85,8 @@ select {
 
   background: url("./img/chevron-down.svg") no-repeat;
   background-position: calc(100% - 0.75rem) center !important;
-  background-color: #0e0f25;
+  background-color: #2ebcbc;
+  color: black;
 
   cursor: pointer;
   font-size: 1rem;
@@ -94,7 +95,7 @@ select {
 input::placeholder,
 select:invalid,
 option {
-  color: #b2b8de;
+  color: #4759d4;
 }
 
 input:focus,
@@ -105,12 +106,12 @@ select:focus {
 button {
   height: 3.25rem;
 
-  background-color: #2f34ab;
+  background-color: #ad0ef1;
 
   border: none;
   border-radius: 0.5rem;
 
-  color: #f1f2f6;
+  color: black;
 
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -123,11 +124,11 @@ button {
 }
 
 button:hover {
-  background-color: #4a5dcd;
+  background-color: #14abc9;
 }
 
 button:focus {
-  outline: 1.5px solid #4a5dcd;
+  outline: 1.5px solid #2ff7ed;
 }
 
 footer {

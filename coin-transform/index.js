@@ -40,7 +40,7 @@ function convertCurrency(amount, price, symbol) {
         // aplica a classe que exibe o footer para mostrar o resultado
         description.innerHTML = `${symbol} 1 =  ${formatCurrency(price)}`
         const count = amount * price
-        result.innerHTML = `R$ ${count.toFixed(2)}`
+        result.innerHTML = `R$ ${count.toFixed(2).replace('.', ',')}`
         footer.classList.add('show-result')
     } catch (err) {
         // remove a classe do footer para esconder o resultado
